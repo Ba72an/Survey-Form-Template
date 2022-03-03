@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form Template</title>
+  
+  <body>
+    <h1 id="title">Survey Form Template</h1>
+    <p id="description">Thank you for attending the wokrshop, and for taking the time to help us improve.</p>
+
+    <br>
+
+<form action="" id="survey-form">
+    <div>
+        <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required></label>
+    </div>
+    
+    <div>
+        <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required></label>
+    </div>
+    
+    <div>
+        <label for="number" id="number-label">Age: <input type="number" id="number" placeholder="Age" min="18" max="150"></label>
+    </div>
+    
+    <div>
+      <label>How did you hear about us? <select name="" id="dropdown" required>
+        <option value="">(select one)</option>
+        <option value="1">Social media</option>
+        <option value="2">Ads.</option>
+        <option value="3">Forum</option>
+        <option value="4">Other</option>
+      </select></label>
+    </div>
+
+    <br>
+
+    <div>
+      <p><strong>How easy is it to use the website?</strong></p>
+      <label><input name="usage" value="easy" type="radio" checked="">Easy</label>
+      <label><input name="usage" value="acceptable" type="radio">Acceptable</label>
+      <label><input name="usage" value="hard" type="radio">Hard</label>
+    </div>
+
+    <br>
+
+    <div>
+      <p><strong>What's your profession?</strong></p>
+      <label><input name="profession" value="Front-end developer" type="checkbox">Front-end developer</label>
+      <label><input name="profession" value="Back-end developer" type="checkbox">Back-end developer</label>
+      <label><input name="profession" value="Mobile apps developer" type="checkbox">Mobile app developer</label>
+      <label><input name="profession" value="IT infrastructure" type="checkbox">IT support</label>
+      <label><input name="profession" value="Other" type="checkbox">Other</label>
+    </div>
+      
+    <fieldset>
+        <label><p class="comments"><strong>Comments & suggestions:</strong></p>
+            <textarea name="bio" rows="3" cols="30" placeholder="Type your comments here..."></textarea>
+        </label>
+        <div id="button"><button type="submit">Submit</button></div>
+    </fieldset>
+
+</form>
+
+</head>
+</body>
+</html>
